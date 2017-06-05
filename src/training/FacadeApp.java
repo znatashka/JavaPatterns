@@ -1,6 +1,6 @@
 package training;
 
-public class Facade {
+public class FacadeApp {
 
     public static void main(String[] args) {
         new Computer().copy();

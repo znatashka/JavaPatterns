@@ -1,6 +1,6 @@
 package training;
 
-public class Command {
+public class CommandApp {
 
     public static void main(String[] args) {
         Comp comp = new Comp();
@@ -11,7 +11,7 @@ public class Command {
     }
 }
 
-interface Command_ {
+interface Command {
     void execute();
 }
 
@@ -29,7 +29,7 @@ class Comp {
     }
 }
 
-class StartCommand implements Command_ {
+class StartCommand implements Command {
     private Comp computer;
 
     StartCommand(Comp computer) {
@@ -42,7 +42,7 @@ class StartCommand implements Command_ {
     }
 }
 
-class StopCommand implements Command_ {
+class StopCommand implements Command {
     private Comp computer;
 
     StopCommand(Comp computer) {
@@ -55,7 +55,7 @@ class StopCommand implements Command_ {
     }
 }
 
-class ResetCommand implements Command_ {
+class ResetCommand implements Command {
     private Comp computer;
 
     ResetCommand(Comp computer) {
@@ -69,11 +69,11 @@ class ResetCommand implements Command_ {
 }
 
 class User {
-    private Command_ start;
-    private Command_ stop;
-    private Command_ reset;
+    private Command start;
+    private Command stop;
+    private Command reset;
 
-    User(Command_ start, Command_ stop, Command_ reset) {
+    User(Command start, Command stop, Command reset) {
         this.start = start;
         this.stop = stop;
         this.reset = reset;

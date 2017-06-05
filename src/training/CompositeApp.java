@@ -3,19 +3,19 @@ package training;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Composite {
+public class CompositeApp {
 
     public static void main(String[] args) {
-        Composite_ composite1 = new Composite_();
-        Composite_ composite2 = new Composite_();
+        Composite composite1 = new Composite();
+        Composite composite2 = new Composite();
 
-        Shape circle1 = new Circle_();
-        Shape triangle1 = new Triangle_();
-        Shape square1 = new Square_();
+        Shape circle1 = new CircleC();
+        Shape triangle1 = new TriangleC();
+        Shape square1 = new SquareC();
 
-        Shape circle2 = new Circle_();
-        Shape triangle2 = new Triangle_();
-        Shape square2 = new Square_();
+        Shape circle2 = new CircleC();
+        Shape triangle2 = new TriangleC();
+        Shape square2 = new SquareC();
 
         composite2.addComponent(triangle2);
         composite2.addComponent(square2);
@@ -41,7 +41,7 @@ interface Shape {
     void draw();
 }
 
-class Square_ implements Shape {
+class SquareC implements Shape {
 
     @Override
     public void draw() {
@@ -49,7 +49,7 @@ class Square_ implements Shape {
     }
 }
 
-class Triangle_ implements Shape {
+class TriangleC implements Shape {
 
     @Override
     public void draw() {
@@ -57,7 +57,7 @@ class Triangle_ implements Shape {
     }
 }
 
-class Circle_ implements Shape {
+class CircleC implements Shape {
 
     @Override
     public void draw() {
@@ -65,7 +65,7 @@ class Circle_ implements Shape {
     }
 }
 
-class Composite_ implements Shape {
+class Composite implements Shape {
     private List<Shape> components = new ArrayList<>();
 
     void addComponent(Shape component) {

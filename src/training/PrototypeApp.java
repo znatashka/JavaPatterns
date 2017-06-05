@@ -1,6 +1,6 @@
 package training;
 
-public class Prototype {
+public class PrototypeApp {
 
     public static void main(String[] args) {
         Human origin = new Human("Vasya", 18);

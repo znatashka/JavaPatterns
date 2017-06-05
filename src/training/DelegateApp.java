@@ -1,6 +1,6 @@
 package training;
 
-public class Delegate {
+public class DelegateApp {
 
     public static void main(String[] args) {
         Painter painter = new Painter();

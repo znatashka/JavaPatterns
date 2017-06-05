@@ -1,6 +1,6 @@
 package training;
 
-public class Builder {
+public class BuilderApp {
 
     public static void main(String[] args) {
         System.out.println(new CarBuilder().build());

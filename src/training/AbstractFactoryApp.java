@@ -1,6 +1,6 @@
 package training;
 
-public class AbstractFactory {
+public class AbstractFactoryApp {
 
     public static void main(String[] args) {
         DeviceFactory deviceFactory = getFactoryByCountryCode("RU");

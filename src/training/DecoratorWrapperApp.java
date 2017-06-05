@@ -1,6 +1,6 @@
 package training;
 
-public class Decorator_Wrapper {
+public class DecoratorWrapperApp {
 
     public static void main(String[] args) {
         Printer printer = new QuotesDecorator(

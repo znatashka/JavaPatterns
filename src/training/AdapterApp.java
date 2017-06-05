@@ -1,6 +1,6 @@
 package training;
 
-public class Adapter {
+public class AdapterApp {
 
     public static void main(String[] args) {
         // через наследование

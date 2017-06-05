@@ -1,6 +1,6 @@
 package training;
 
-public class ChainOfResponsibility {
+public class ChainOfResponsibilityApp {
 
     public static void main(String[] args) {
         SMSLogger smsLogger = new SMSLogger(Level.ERROR);

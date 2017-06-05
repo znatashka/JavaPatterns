@@ -3,7 +3,7 @@ package training;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class FactoryMethod {
+public class FactoryMethodApp {
 
     public static void main(String[] args) {
         WatchMaker watchMaker = getMakerByName("Digital");
